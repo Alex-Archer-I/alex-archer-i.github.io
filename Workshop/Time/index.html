@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Time</title>
+</head>
+<body>
+    <div class="main">
+        <div class="cover">
+            <div class="container">
+                <h2 class="text text_header">Стрелочные часы</h2>
+                <div class="time">
+                    <div class="arrows">
+                        <div class="arrow arrow_seconds">
+                            <div class="line"></div>
+                        </div>
+                        <div class="arrow arrow_minutes">
+                            <div class="line"></div>
+                        </div>
+                        <div class="arrow arrow_hours">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">Часы реализованны через односекундный setInterval().</div>
+                <div class="text">При каждой итерации он получает объект Date с текущей датой, преобразует его в милисекунды, а затем проводит вычисления, чтобы получить количество секунд, минут и часов на текущий момент.</div>
+                <div class="text">Потом функция передает стрелкам свойство transform: rotate() с соответствующим количеством градусов.</div>
+                <h2 class="text text_header m_20">Обратный отсчет</h2>
+                <div class="text">До Нового Года осталось:</div>
+                <div class="countdown">
+                    <div class="timeblock">
+                        <div id="days" class="timeblock_number">00</div>
+                        <div class="timeblock_text">дней</div>
+                    </div>
+                    <div class="timeblock">
+                        <div id="hours" class="timeblock_number">00</div>
+                        <div class="timeblock_text">часов</div>
+                    </div>
+                    <div class="timeblock">
+                        <div id="minutes" class="timeblock_number">00</div>
+                        <div class="timeblock_text">минут</div>
+                    </div>
+                    <div class="timeblock">
+                        <div id="seconds" class="timeblock_number">00</div>
+                        <div class="timeblock_text">секунд</div>
+                    </div>
+                </div>
+                <div class="text">Обратный отсчет реализован по тому же принципу, только для расчетов используется ранее созданная дата, значение которой вычитается из текущей.</div>
+                <div class="text">Также добавленна небольшая функция, которая подставляет ноль для однозначных чисел.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

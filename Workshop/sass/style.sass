@@ -18,7 +18,7 @@ body
     position: relative
 
 .text
-    font-family: 'Caveat', cursive
+    font-family: 'Poiret One', cursive
     color: #fff
     font-size: 30px
     text-align: center
@@ -27,8 +27,13 @@ body
         font-size: 30px
         padding-left: 500px
         text-align: right
+        padding-top: 50px
+    &_bold
+        font-weight: bold
+        font-size: 37px
     &_black
         color: #000000
+        font-weight: bold
 
 .panel
     min-height: 100px
@@ -43,4 +48,60 @@ body
         &:hover .text_black
             color: #ffffff
 
-//font-family: 'Caveat', cursive
+.menu
+    position: absolute
+    width: 370px
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    top: 0
+    right: 0
+    &_link
+        font-family: 'Poiret One', cursive
+        color: #ffffff
+        font-size: 20px
+        text-decoration: none
+        transition: 0.5s all
+        cursor: pointer
+        &:hover
+            color: #40975f
+
+.contacts
+    width: 370px
+    height: 170px
+    position: absolute
+    top: -500px
+    right: 0
+    background-color: rgba(255, 255, 255, 0.9)
+    text-align: center
+    transition: 0.5s all
+    &_text
+        font-family: 'Poiret One', cursive
+        color: #000000
+        font-size: 24px
+        text-align: center
+        padding-top: 5px
+        &_bold
+            font-weight: bold
+    &_textblock
+        text-align: center
+        padding: 20px 10px 20px 10px
+    &_close
+        position: absolute
+        top: 15px
+        right: 20px
+        width: 20px
+        height: 3px
+        background-color: #000000
+        transform: rotate(45deg)
+        cursor: pointer
+        &::after
+            content: ''
+            position: absolute
+            top: 0px
+            right: 0px
+            width: 20px
+            height: 3px
+            background-color: #000000
+            transform: rotate(90deg)

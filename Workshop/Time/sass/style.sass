@@ -1,0 +1,92 @@
+body
+    margin: 0
+
+.main
+    min-height: 1200px
+    height: 1px
+    background: url(../../img/wood.jpg) center 100%/cover no-repeat
+
+.cover
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+
+.container
+    width: 1200px
+    height: 100%
+    margin: 0 auto
+    position: relative
+
+.text
+    font-family: 'Poiret One', cursive
+    font-size: 30px
+    text-align: center
+    padding: 10px
+    color: #ffffff
+    &_header
+        font-size: 40px
+        margin: 0
+
+.time
+    height: 300px
+    width: 300px
+    margin: 30px auto
+    border: 3px solid #ffffff
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.arrows
+    position: relative
+    height: 220px
+    width: 3px
+
+.arrow
+    position: absolute
+    top: 0
+    &_seconds
+        height: 220px
+        width: 1px
+        left: 1px
+    &_minutes
+        height: 220px
+        width: 3px
+    &_hours
+        height: 150px
+        width: 3px
+        top: 35px
+
+.line
+    height: 50%
+    width: 100%
+    background-color: #fff
+
+.countdown
+    display: flex
+    justify-content: space-between
+    height: 150px
+    width: 440px
+    margin: 20px auto
+
+.timeblock
+    height: 150px
+    width: 100px
+    background-color: rgba(255, 255, 255, 0.7)
+    border-radius: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &_number
+        color: #000000
+        font-size: 40px
+        font-weight: bold
+        font-family: 'Poiret One', cursive
+    &_text
+        color: #000000
+        font-family: 'Poiret One', cursive
+        font-size: 30px
+
+.m_20
+    margin-top: 20px
