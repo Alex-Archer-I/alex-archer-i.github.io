@@ -1,0 +1,16 @@
+{
+    "blog": [
+        {
+            "img": "img/Updates/update_1.jpg",
+            "text": "Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships"
+        },
+        {
+            "img": "img/Updates/update_2.png",
+            "text": "A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind"
+        },
+        {
+            "img": "img/Updates/update_3.png",
+            "text": "Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments"
+        }
+    ]
+}

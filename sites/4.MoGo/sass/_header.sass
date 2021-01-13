@@ -1,0 +1,116 @@
+.header
+    height: 1000px
+    background: url('../img/Header_bg.png') center (center/cover) no-repeat
+
+    &_menu
+        padding-top: 28px
+    
+    &_logo
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 30px
+        font-weight: 700
+        text-decoration: none
+    
+    &_wrapper
+        width: 600px
+    
+    nav
+        width: 480px
+        ul
+            list-style: none
+        a
+            color: #ffffff
+            text-decoration: none
+            transition: 0.5s all
+            &:hover
+                color: $mogoYellow
+    
+    &_mobile
+        position: relative
+        width: 30px
+        height: 2px
+        background-color: #fff
+        display: none
+        &::after
+            content: ''
+            position: absolute
+            top: 5px
+            width: 30px
+            height: 2px
+            background-color: #fff
+        &::before
+            content: ''
+            position: absolute
+            top: -5px
+            width: 30px
+            height: 2px
+            background-color: #fff
+            
+
+    
+    &_subtitle
+        color: #ffffff
+        font-family: "Kaushan Script"
+        font-size: 72px
+        font-weight: 400
+        text-align: center
+        margin-top: 164px
+
+    &_title
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 150px
+        font-weight: 700
+        text-align: center
+        margin: 0
+
+    &_divider
+        background-color: #fff
+    
+    &_learn
+        width: 160px
+        height: 40px
+        display: block
+        border: 3px solid #ffffff
+        background: none
+        color: #ffffff
+        margin: 0 auto
+        margin-top: 50px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            background-color: $mogoGreen
+
+.learn
+    &_window
+        position: fixed
+        display: none
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: $mogoGreen
+        width: 300px
+        height: 200px
+        border-radius: 10px
+    &_subtitle
+        padding-top: 40px
+    &_text
+        text-align: center
+        padding-top: 10px
+    &_close
+        position: absolute
+        top: 20px
+        right: 10px
+        width: 30px
+        height: 3px
+        background-color: #000000
+        transform: rotate(45deg)
+        cursor: pointer
+        &::after
+            content: ''
+            position: absolute
+            transform: rotate(-95deg)
+            width: 30px
+            height: 3px
+            background-color: #000000

@@ -1,0 +1,271 @@
+body
+    margin: 0
+    background: url('../img/Main.jpg') center/cover
+
+.wrapper
+    background-color: rgba(0, 0, 0, 0.5)
+
+.main
+    min-height: 900px
+    width: 1200px
+    padding-top: 150px
+    margin: 0px auto
+    position: relative
+
+.hero_stats
+    height: 30px
+    width: 500px
+    margin: 0 auto
+    padding: 0 30px
+    border-radius: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: rgba(255, 255, 255, 0.5)
+
+.rules
+    position: absolute
+    background-color: rgba(255, 255, 255, 0.5)
+    border-radius: 20px
+    width: 300px
+    height: 380px
+    right: -250px
+    top: 40px
+
+.text
+    font-family: 'Gabriela', serif
+    font-weight: bold
+    font-size: 21px
+    &_small
+        font-size: 14px
+        margin-top: 10px
+        margin-left: 5px
+
+.map
+    height: 550px
+    width: 1170px
+    margin: 50px auto
+    position: relative
+
+.hero
+    height: 70px
+    width: 70px
+    background-color: #479647
+    border-radius: 100%
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 2s all
+    z-index: 3
+    span
+        color: #ffffff
+        font-size: 42px
+
+.land
+    width: 70px
+    height: 70px
+    border-radius: 100%
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    filter: grayscale(1)
+    transition: 1s all
+    &_active
+        filter: none
+        &:hover
+            transform: scale(1.3)
+
+.column
+    &_A
+        left: 0px
+    &_B
+        left: 140px
+    &_C
+        left: 280px
+    &_D
+        left: 420px
+    &_E
+        left: 560px
+    &_F
+        left: 700px
+    &_G
+        left: 840px
+    &_H
+        left: 980px
+    &_I
+        left: 1120px
+
+.row
+    &_A
+        top: 0px
+    &_B
+        top: 100px
+    &_C
+        top: 200px
+    &_D
+        top: 300px
+    &_E
+        top: 400px
+
+.event
+    min-height: 300px
+    width: 300px
+    position: absolute
+    top: -1000px
+    left: 50%
+    background-color: #435874
+    border: 5px solid #82addf
+    border-radius: 10%
+    transition: 1s all
+    z-index: 5
+    &_box
+        min-height: 300px
+    &_text
+        font-family: 'Gabriela', serif
+        padding: 30px 15px 0 15px
+        text-align: center
+        .add
+            padding: 10px 15px 0 15px
+    &_change
+        font-family: 'Gabriela', serif
+        text-align: center
+        margin-top: 20px
+        font-weight: bold
+
+.close
+    display: block
+    margin: 20px auto
+    width: 150px
+    height: 50px
+    border: none
+    border-radius: 20px
+    font-family: 'Gabriela', serif
+
+.game_over
+    position: absolute
+    width: 400px
+    height: 150px
+    padding-top: 10px
+    background-color: #435874
+    border: 5px solid #82addf
+    border-radius: 20px
+    font-size: 21px
+    font-family: 'Gabriela', serif
+    div
+        text-align: center
+
+.active
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.overlay
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    display: none
+    z-index: 10
+
+.line
+    position: absolute
+    background-color: #fff
+    height: 4px
+    width: 145px
+    &_A
+        top: 173px
+        left: 25px
+        transform: rotate(-35deg)
+    &_B
+        top: 273px
+        left: 25px
+        transform: rotate(35deg)
+    &_C
+        top: 73px
+        left: 165px
+        transform: rotate(-35deg)
+    &_D
+        top: 123px
+        left: 165px
+    &_E
+        top: 373px
+        left: 165px
+        transform: rotate(35deg)
+    &_F
+        top: 23px
+        left: 305px
+    &_G
+        top: 73px
+        left: 305px
+        transform: rotate(35deg)
+    &_H
+        top: 173px
+        left: 305px
+        transform: rotate(35deg)
+    &_I
+        top: 423px
+        left: 305px
+    &_J
+        top: 23px
+        left: 445px
+    &_K
+        top: 173px
+        left: 445px
+        transform: rotate(35deg)
+    &_L
+        top: 223px
+        left: 445px
+    &_M
+        top: 423px
+        left: 445px
+    &_N
+        top: 323px
+        left: 275px
+        width: 200px
+        transform: rotate(-55deg)
+    &_O
+        top: 73px
+        left: 585px
+        transform: rotate(35deg)
+    &_P
+        top: 173px
+        left: 585px
+        transform: rotate(-35deg)
+    &_Q
+        top: 273px
+        left: 585px
+        transform: rotate(35deg)
+    &_R
+        top: 373px
+        left: 585px
+        transform: rotate(-35deg)
+    &_S
+        top: 123px
+        left: 725px
+    &_T
+        top: 273px
+        left: 725px
+        transform: rotate(-35deg)
+    &_U
+        top: 323px
+        left: 725px
+    &_V
+        top: 123px
+        left: 865px
+    &_W
+        top: 273px
+        left: 865px
+        transform: rotate(35deg)
+    &_X
+        top: 323px
+        left: 865px
+    &_Y
+        top: 173px
+        left: 1005px
+        transform: rotate(35deg)
+    &_Z
+        top: 273px
+        left: 1005px
+        transform: rotate(-35deg)

@@ -1,0 +1,103 @@
+.body
+    margin: 0
+    font-family: 'Raleway', sans-serif
+
+.main
+    height: 1000px
+    width: 100%
+    background: url('../img/Main.jpg') center/cover
+
+.container
+    height: 100%
+    width: 1200px
+    margin: 0 auto
+
+.cover
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+
+.grid
+    height: 700px
+    width: 720px
+    margin: 0 auto
+    padding-top: 100px
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(4, 1fr)
+    justify-items: center
+    align-items: center
+
+.card
+    height: 140px
+    width: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-color: #4b74cc
+    border-radius: 10%
+    transition: 1s all
+    img
+        height: 70px
+        width: 70px
+
+.over
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #809be4
+    border-radius: 10%
+    transition: 1s all
+    opacity: 0
+    &_hide
+        opacity: 1
+        &:hover
+            transform: scale(1.2)
+
+.overlay
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+.textline
+    height: 70px
+    width: 620px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto
+    padding: 0 50px
+    font-family: 'Raleway', sans-serif
+    background-color: rgba(255, 255, 255, 0.5)
+    border-radius: 70px
+    font-size: 21px
+
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-height: 300px
+    width: 300px
+    box-sizing: border-box
+    padding: 20px
+    background-color: #7fa9da
+    font-size: 21px
+    font-family: 'Raleway', sans-serif
+    text-align: center
+    border-radius: 10px
+    &_text
+        margin: 10px 0
+    &_button
+        border: none
+        border-radius: 10px
+        background-color: #25397e
+        color: #ffffff
+        height: 70px
+        width: 150px
+        font-size: 21px
