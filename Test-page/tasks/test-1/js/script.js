@@ -49,12 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
             textMobile.classList.add('hide');
         }
 
-        if (dist < 100 && dist > -100) {
-            polygon.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+        if (dist > 0 && dist < 100) {
             hasRotateRight = false;
             hasRotateLeft = false;
+            polygon.style.transform = `translateX(-50%) rotate(${rotateRight - (dist / step)}deg)`;
+        }
+
+        if (dist < 0 && dist > -100) {
+            hasRotateRight = false;
+            hasRotateLeft = false;
+            polygon.style.transform = `translateX(-50%) rotate(${rotateLeft + (dist / step)}deg)`;
+        }
+
+        if (dist < 10 && dist > -10) {
             textMobile.classList.remove('hide');
         }
+        console.log(dist);
     });
 
     swipe.addEventListener('touchend', () => {
@@ -70,9 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             changeText(index, textArray, textMobile);
             hasRotateRight = false;
-        }
-
-        if (hasRotateLeft) {
+        } else if (hasRotateLeft) {
             angle -= step; 
             polygon.style.transform = `translateX(-50%) rotate(${angle}deg)`;
 
@@ -84,6 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             changeText(index, textArray, textMobile);
             hasRotateLeft = false;
+        } else {
+            polygon.style.transform = `translateX(-50%) rotate(${angle}deg)`;
         }
 
         moving.forEach(elem => {
