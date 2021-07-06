@@ -1,0 +1,28 @@
+{
+    "modal": [
+        {
+            "title": "Thanks for buying!",
+            "text": "Now you are cool surfer!",
+            "buttonText": "Cool",
+            "id": "buy"
+        },
+        {
+            "title": "Look at all this boards!",
+            "text": "Just use your imagination!",
+            "buttonText": "Wow",
+            "id": "all-boards"
+        },
+        {
+            "title": "It's just more of strange Latin text...",
+            "text": "You really whant to read it?",
+            "buttonText": "Nope",
+            "id": "read"
+        },
+        {
+            "title": "All posts",
+            "text": "Now buy board!",
+            "buttonText": "Okay",
+            "id": "all-posts"
+        }
+    ]
+}

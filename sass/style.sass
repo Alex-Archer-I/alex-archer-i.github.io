@@ -1,0 +1,166 @@
+body
+    margin: 0
+
+.container
+    height: 100%
+    width: 1200px
+    margin: 0 auto
+    position: relative
+
+.overlay
+    min-height: 100vh
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+
+.header
+    min-height: 100vh
+    width: 100%
+    background: url("../img/mountain.jpg") center center/cover no-repeat
+    &-icon
+        font-size: 40px
+
+.text-block
+    width: 1100px
+    padding-top: 200px
+
+.react
+    min-height: 100vh
+    width: 100%
+    &-grid
+        height: 300px
+        width: 1000px
+        margin: 100px auto 0 auto
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(3, 150px)
+        gap: 10px
+    &-icon
+        color: #000000
+        font-size: 40px
+        margin: 0 10px
+    &-rocket
+        height: 300px
+        width: 300px
+        grid-column: 1 / 2
+        grid-row: 1 / 4
+        justify-self: center
+        align-self: center
+    
+.move-upward
+    transform: translateX(50px)
+
+.landing
+    min-height: 100vh
+    width: 100%
+
+.about
+    min-height: 100vh
+    width: 100%
+
+.text
+    color: #000000
+    font-weight: 400
+    font-size: 21px
+    font-family: 'Bona Nova', serif
+
+.text-white
+    color: #ffffff
+
+.text-bold
+    font-size: 33px
+
+.text-main
+    font-weight: 700
+    font-size: 51px
+    margin: 50px 0
+
+.title
+    padding-top: 50px
+    margin-bottom: 50px
+    text-align: center
+    font-size: 70px
+    font-weight: 700
+    border-bottom: 2px solid #000000
+
+.link-row
+    margin-top: 50px
+    width: 300px
+    padding: 0 20px
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.link
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 70px
+    width: 70px
+    border: 3px solid #ffffff
+    border-radius: 100%
+    text-decoration: none
+    color: #ffffff
+    font-size: 21px
+    transition: all 0.5s
+    &:hover
+        transform: scale(2.0)
+
+.grid
+    height: 70%
+
+.react-link
+    display: flex
+    justify-content: start
+    align-items: center
+    height: 100px
+    width: 530px
+    margin: 10px 0
+    border-radius: 70px
+    text-decoration: none
+    color: #000000
+    transition: 0.5s all
+    background-color: rgba(51, 134, 255, 0.1)
+    grid-column: 2 / 4
+    &:hover
+        background-color: #7292e7
+    &-text
+        font-size: 21px
+        font-family: 'Bona Nova', serif
+
+.landing-grid
+    height: 700px
+    width: 700px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    gap: 20px
+
+.landing-link
+    display: block
+    border: 3px solid #000000
+    border-radius: 20px
+    filter: grayscale(1)
+    transition: 0.5s all
+    &:hover
+        filter: none
+
+.surf
+    background: url("../img/SurfCo.jpg") center center/cover no-repeat
+
+.app
+    background: url("../img/AppLab.jpg") center center/cover no-repeat
+
+.axit
+    background: url("../img/Axit.jpg") center center/cover no-repeat
+
+.mogo
+    background: url("../img/MoGo.jpg") center center/cover no-repeat
+
+@media screen and ( max-width: 1200px )
+    .container
+        width: 100%
+
+    .title
+        font-size: 1em   
