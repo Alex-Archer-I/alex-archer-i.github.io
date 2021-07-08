@@ -26,14 +26,13 @@ body
 .react
     min-height: 100vh
     width: 100%
-    &-grid
+    &-flex
+        display: flex
+        justify-content: space-between
+        align-items: center
         height: 300px
-        width: 1000px
+        width: 900px
         margin: 100px auto 0 auto
-        display: grid
-        grid-template-columns: repeat(3, 1fr)
-        grid-template-rows: repeat(3, 150px)
-        gap: 10px
     &-icon
         color: #000000
         font-size: 40px
@@ -41,10 +40,6 @@ body
     &-rocket
         height: 300px
         width: 300px
-        grid-column: 1 / 2
-        grid-row: 1 / 4
-        justify-self: center
-        align-self: center
     
 .move-upward
     transform: translateX(50px)
@@ -115,13 +110,13 @@ body
     align-items: center
     height: 100px
     width: 530px
-    margin: 10px 0
+    margin: 30px 0
+    padding: 10px
     border-radius: 70px
     text-decoration: none
     color: #000000
     transition: 0.5s all
-    background-color: rgba(51, 134, 255, 0.1)
-    grid-column: 2 / 4
+    background-color: rgba(62, 139, 255, 0.1)
     &:hover
         background-color: #7292e7
     &-text
