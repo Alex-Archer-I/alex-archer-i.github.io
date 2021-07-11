@@ -26,27 +26,38 @@ body
 .react
     min-height: 100vh
     width: 100%
-    &-flex
-        display: flex
-        justify-content: space-between
-        align-items: center
-        height: 300px
-        width: 900px
-        margin: 100px auto 0 auto
+    background: url("../img/wall.jpg")
     &-icon
         color: #000000
-        font-size: 40px
+        font-size: 80px
         margin: 0 10px
+        border: 2px solid #000000
+        border-radius: 100%
+        padding: 2px
+    &-title
+        width: 400px
+        grid-column-start: 1
+        grid-column-end: 2
     &-rocket
         height: 300px
         width: 300px
-    
-.move-upward
-    transform: translateX(50px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 4
+        place-self: center
+    &-grid
+        height: 750px
+        width: 1000px
+        display: grid
+        grid-template-columns: 430px 570px
+        grid-template-rows: repeat(3, 1fr)
+        gap: 20px
 
 .landing
     min-height: 100vh
     width: 100%
+    background: url("../img/wall.jpg")
 
 .about
     min-height: 100vh
@@ -99,6 +110,7 @@ body
     font-size: 21px
     transition: all 0.5s
     &:hover
+        color: #8fbde4
         transform: scale(2.0)
 
 .grid
@@ -112,13 +124,18 @@ body
     width: 530px
     margin: 30px 0
     padding: 10px
+    border: 2px solid #000000
     border-radius: 70px
     text-decoration: none
     color: #000000
     transition: 0.5s all
-    background-color: rgba(62, 139, 255, 0.1)
+    place-self: center
     &:hover
-        background-color: #7292e7
+        border: 2px solid #8fbde4
+        background-color: #8fbde4
+    &:hover span
+        color:#ffffff
+        border-color: #ffffff
     &-text
         font-size: 21px
         font-family: 'Bona Nova', serif
@@ -139,6 +156,7 @@ body
     filter: grayscale(1)
     transition: 0.5s all
     &:hover
+        border-color: #8fbde4
         filter: none
 
 .surf
