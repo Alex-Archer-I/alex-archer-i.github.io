@@ -24,7 +24,7 @@ body
     padding-top: 200px
 
 .react
-    min-height: 100vh
+    height: 700px
     width: 100%
     background: url("../img/wall.jpg")
     &-icon
@@ -36,23 +36,16 @@ body
         padding: 2px
     &-title
         width: 400px
-        grid-column-start: 1
-        grid-column-end: 2
-    &-rocket
-        height: 300px
-        width: 300px
-        grid-column-start: 1
-        grid-column-end: 2
-        grid-row-start: 2
-        grid-row-end: 4
-        place-self: center
-    &-grid
-        height: 750px
-        width: 1000px
-        display: grid
-        grid-template-columns: 430px 570px
-        grid-template-rows: repeat(3, 1fr)
-        gap: 20px
+    &-flex
+        height: 700px
+        width: 900px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        transform: translateY(-200px)
+
+.right
+    align-self: flex-end
 
 .landing
     min-height: 100vh
@@ -129,7 +122,6 @@ body
     text-decoration: none
     color: #000000
     transition: 0.5s all
-    place-self: center
     &:hover
         border: 2px solid #8fbde4
         background-color: #8fbde4
