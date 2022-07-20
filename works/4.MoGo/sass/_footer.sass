@@ -1,0 +1,77 @@
+.footer
+    min-height: 550px
+
+    &_grid
+        display: grid
+        grid-template-columns: 480px 340px 252px
+        grid-template-rows: 355px
+        column-gap: 50px
+        margin-top: 74px
+
+    &_logo
+        color: #cccccc
+        font-family: Montserrat
+        font-size: 46px
+        font-weight: 700
+        margin-bottom: 22px
+    
+    &_followers
+        color: #333333
+        font-family: Montserrat
+        font-size: 14px
+        margin: 39px 0 10px 0
+        span
+            font-size: 18px
+            font-weight: 700
+    
+    &_links
+        margin-top: 18px
+        a
+            margin-left: 17px
+        .text_italic
+            display: inline
+    
+    &_form
+        margin-top: 35px
+        input
+            width: 230px
+            height: 40px
+            border: 1px solid #e7e7e7
+            background-color: #ffffff
+        button
+            width: 150px
+            height: 44px
+            padding: 0
+            transform: translateX(-4px)
+            background-color: #95e1d3
+            color: #ffffff
+            border: none
+    
+    &_blogs
+        width: 340px
+        
+    &_minititle
+        margin-bottom: 40px
+    
+    &_blog
+        margin-bottom: 31px
+        img
+            margin-right: 20px
+    
+    &_instagram
+        a
+            text-decoration: none
+        &_grid
+            margin-bottom: 18px
+            display: grid
+            grid-template-columns: repeat(3, 88px)
+            grid-template-rows: repeat(3, 88px)
+            grid-column-gap: 2px
+            grid-row-gap: 2px
+    
+    .copyright
+        color: #333333
+        font-weight: 700
+        text-align: center
+        span
+            color: $mogoRed

@@ -1,0 +1,71 @@
+.team
+    height: 1049px
+
+    &_text
+        width: 954px
+        text-align: center
+        margin: 0 auto
+    
+    &_flex
+        margin-top: 92px
+
+    &_box
+        width: 380px
+        height: 550px
+        &_text
+            text-align: center
+            margin-top: 15px
+            font-style: italic
+    
+    &_file
+        height: 470px
+        position: relative
+        background-color: $mogoGreen
+        &:hover .team_img
+            transform: translate(-10px, -10px)
+        &:hover .team_overlay
+            opacity: 0.7
+            transform: translate(-10px, -10px)
+        &:hover .team_links
+            opacity: 1
+    
+    &_img
+        position: absolute
+        transition: 1s all
+    
+    &_overlay
+        position: absolute
+        opacity: 0
+        transition: 1s all
+
+    &_links
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 1
+        display: flex
+        opacity: 0
+        transition: 1s all
+        .link
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 56px
+            height: 56px
+            background-color: $mogoYellow
+            border-right: 1px solid $mogoRed
+            transition: 1s all
+            &:hover
+                background-color: $mogoRed
+            &:hover svg path
+                fill: #ffffff
+            &:nth-child(4)
+                border: none
+            svg
+                path
+                    fill: $mogoRed
+                    transition: 1s all
+    
+    &_minititle
+        margin-top: 31px

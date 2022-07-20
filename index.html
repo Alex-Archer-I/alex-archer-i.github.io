@@ -3,15 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/main.acf6c960.chunk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/loader.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/landings.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/everything.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/app.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
+    <aside id="loader">
+        <div class="loader-round"></div>
+        <div class="loader-round"></div>
+        <div class="loader-round"></div>
+    </aside>
 
-    <div id='root'></div>
+    <header>
+        <nav class="middle">
+            <ul>
+                <li>
+                    <a href="#landings">Мои работы</a>
+                </li>
+                <li>
+                    <a href="#everything">Разное</a>
+                </li>
+                <li>
+                    <a href="#about">Обо мне</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <script src="/static/js/main.09391944.chunk.js"></script>
-    <script src="static/js/2.f500ea00.chunk.js"></script>
-    <script src="static/js/runtime-main.521fd94a.js"></script>
+    <main>
+        <section id="hero">
+            <div class="middle">
+                <h1>Привет! <br> Меня зовут Алекс, я - фронтенд разработчик.</h1>
+                <p>Добро пожаловать на мою страницу!</p>
+            </div>
+        </section>
+
+        <section id="landings">
+            <h2>Мои работы</h2>
+            <p>Эти работы выполненны по шаблонам взятым из доступных источников, все права на дизайн принадлежат их авторам.</p>
+            <ul id="landings-grid">
+                <li>
+                    <a href="/works/1.Surfers/index.html"><img src="/img/works-imgs/works-surf.png" alt="surf"></a>
+                </li>
+                <li>
+                    <a href="/works/2.AppLab/index.html"><img src="/img/works-imgs/works-app.png" alt="surf"></a>
+                </li>
+                <li>
+                    <a href="/works/3.Axit/index.html"><img src="/img/works-imgs/works-axit.png" alt="surf"></a>
+                </li>
+                <li>
+                    <a href="/works/4.MoGo/index.html"><img src="/img/works-imgs/works-mogo.png" alt="surf"></a>
+                </li>
+                <li>
+                    <a href="/works/university-courses/index.html"><img src="/img/works-imgs/work-courses.bmp" alt="surf"></a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="everything">
+            <div class="middle" id="everything-content">
+                <div id="random-fact">
+                    <h2>Случайный факт, который вы, возможно, не знали</h2>
+                    <p></p>
+                </div>
+                <img src="/img/justin-kauffman-a8lTjWJJgLA-unsplash.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="about" class="middle">
+            <div id="about-text">
+                <h2>Обо мне</h2>
+                <p>Как вы уже поняли из той крутой надписи наверху, я - фронтенд разработчик. И очень люблю свою профессию. Сам по себе этот факт означает близкое знакомство с главными инструментами - HTML, CSS, JS. Помимо знаменитого трио я специализируюсь на библиотеке React.</p>
+                <p>Как и для любой профессии, а особенно — профессии разработчика, обучение и развитие — это бесконечный процесс. Поэтому я не прекращаю изучать новое, совершенсвтовать свои навыки, искать новые вызовы и  слеить за постоянно меняющимся и непредсказуемым (а иногда жестоким) миром веб разработки.</p>
+            </div>
+            <ul id="about-features">
+                <li class="about-feature"></li>
+                <li class="about-feature"></li>
+                <li class="about-feature"></li>
+                <li class="about-feature"></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div id="contacts" class="middle">
+            <p>Телефон: +7-936-259-55-29</p>
+            <p>Email: alexfrontenddevelop@gmail.com</p>
+        </div>
+        <p>Спасибо сайту <a href="https://unsplash.com/">unsplash.com</a> и конкретно <a href="https://unsplash.com/@anthonydelanoix">Anthony DELANOIX</a> и <a href="https://unsplash.com/@justindkauffman">Justin Kauffman</a> за фотографии.</p>
+        <p>А сайту <a href="https://www.flaticon.com/">flaticon.com</a>, <a href="https://www.flaticon.com/authors/freepik">Freepik</a> и <a href="https://www.flaticon.com/authors/pixel-perfect">Pixel Perfect</a> большая благодарность за иконки.</p>
+        <p>2022 © Alex</p>
+    </footer>
 </body>
 </html>

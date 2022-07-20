@@ -1,0 +1,230 @@
+@media (max-width: 1200px) {
+    #courses ul {
+        width: 70%;
+    }
+
+    #form-submit {
+        padding: 3rem 3rem;
+    }
+
+    #form-submit input,
+    #form-submit textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #hero-image {
+        background: none;
+    }
+    
+    #hero-image-img {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    #hero-image-title {
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #features {
+        padding: 3rem 0;
+    }
+
+    #features ul {
+        display: block;
+    }
+
+    #features li {
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    #intertext-second {
+        padding: 3rem 0;
+    }
+
+    #intertext-second p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    #intertext-second p:after {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #inspiration {
+        height: auto;
+        background-position: bottom;
+        padding: 1rem 0.5rem;
+    }
+
+    #inspiration-content {
+        position: static;
+        transform: none;
+    }
+}
+
+@media (max-width: 850px) {
+    header.middle {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #hamburger,
+    #menu-mobile {
+        display: block;
+    }
+
+    #about-students-text {
+        transform: none;
+    }
+
+    #intertext-first h2 {
+        font-size: 2rem;
+    }
+
+    #intertext-first p {
+        font-size: 1rem;
+    }
+
+    #courses-image {
+        display: none;
+    }
+
+    #courses ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #filler-image {
+        height: 20rem;
+    }
+
+    #inspiration-content h2 {
+        font-size: 3rem;
+    }
+
+    #inspiration-content p {
+        font-size: 0.7rem;
+        line-height: 1;
+    }
+
+    #form {
+        display: block;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    #features li {
+        width: 90%;
+    }
+
+    #about-students {
+        height: auto;
+    }
+
+    #about-students-content {
+        display: block;
+    }
+
+    #about-students-content img {
+        display: none;
+    }
+
+    #intertext-first {
+        padding: 3rem 0;
+    }
+
+    #intertext-second {
+        padding: 2rem 0;
+    }
+
+    #modal p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #courses {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    #courses ul {
+        display: block;
+    }
+
+    #courses li {
+        padding: 1rem 0.5rem;
+    }
+
+    #courses li p {
+        margin-top: 0.5rem;
+    }
+
+    #courses li a {
+        margin-top: 1rem;
+    }
+
+    #inspiration-content {
+        display: block;
+    }
+
+    #inspiration-content h2 {
+        font-size: 2rem;
+    }
+
+    #inspiration-content a {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #hero-image-title h1 {
+        font-size: 3rem;
+    }
+
+    #hero-image-title h2 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    #features li h3 {
+        font-size: 1rem;
+    }
+
+    #features li p {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+
+    .features-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #inspiration {
+        text-align: center;
+    }
+
+    #inspiration h2 {
+        color: var(--main-color-dark);
+    }
+
+    #form-contacts {
+        padding: 2rem 2rem;
+    }
+}
