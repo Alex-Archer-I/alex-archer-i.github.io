@@ -39,4 +39,4 @@ window.addEventListener('scroll', () => {
     };
 });
 
-document.querySelector('#everything p').textContent = facts[randomIndex(3)];
+document.querySelector('#everything-fact p').textContent = facts[randomIndex(3)];
