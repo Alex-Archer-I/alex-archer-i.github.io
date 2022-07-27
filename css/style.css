@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     --color-green: rgb(30, 148, 70);
     --color-blue: rgb(97, 149, 228);

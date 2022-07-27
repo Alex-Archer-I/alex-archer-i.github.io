@@ -93,6 +93,7 @@
 @media (max-width: 500px) {
     #landings {
         background-color: rgb(245, 245, 245);
+        padding: 0.5rem 0;
     }
 
     #landings h2 {
@@ -118,5 +119,6 @@
         filter: none;
         margin-bottom: 1rem;
         transition: 0.3s all;
+        margin: 0 auto;
     }
 }
