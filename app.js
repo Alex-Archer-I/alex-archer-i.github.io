@@ -40,3 +40,33 @@ window.addEventListener('scroll', () => {
 });
 
 document.querySelector('#everything-fact p').textContent = facts[randomIndex(3)];
+
+//Modal window
+
+const modalElement = document.getElementById('modal');
+const modalWindow = document.getElementById('modal-window');
+const modalCloseElement = document.getElementById('modal-close');
+
+const certifications = document.querySelectorAll('.certification');
+
+const certificationsImage = ['/img/certifications/react-certification.jpg', '/img/certifications/figma-certification.jpg'];
+
+function modalOpen(index) {
+    modalWindow.innerHTML = `<img src=${certificationsImage[index]} alt="certification">`;
+    modalElement.style.display = 'flex';
+};
+
+function modalClose() {
+    modalWindow.innerHTML = '';
+    modalElement.style.display = 'none';
+};
+
+for (const certification of certifications) {
+    certification.addEventListener('click', (event) => {
+        modalOpen(+event.target.dataset.certificationId);
+    });
+};
+
+modalCloseElement.addEventListener('click', () => {
+    modalClose();
+});

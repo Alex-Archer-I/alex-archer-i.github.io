@@ -4,6 +4,7 @@ header {
     position: fixed;
     z-index: 100;
     transition: 0.7s background-color;
+    box-sizing: border-box;
 }
 
 nav {
@@ -115,8 +116,13 @@ nav li a {
 }
 
 @media (max-width: 400px) {
+
     nav {
         width: 90%;
+    }
+
+    nav ul{
+        justify-content: space-evenly;
     }
 
     nav li a {
