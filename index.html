@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/everything.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <script src="/app.js" defer></script>
     <title>Portfolio</title>
 </head>
@@ -26,7 +27,7 @@
     </aside>
 
     <header>
-        <nav>
+        <nav class="middle">
             <ul>
                 <li>
                     <a href="#landings">Мои работы</a>
@@ -90,6 +91,11 @@
                 <h2>Обо мне</h2>
                 <p>Как вы уже поняли из той крутой надписи наверху, я - фронтенд разработчик. И очень люблю свою профессию. Сам по себе этот факт означает близкое знакомство с главными инструментами - HTML, CSS, JS. Помимо знаменитого трио я специализируюсь на библиотеке React.</p>
                 <p>Как и для любой профессии, а особенно — профессии разработчика, обучение и развитие — это бесконечный процесс. Поэтому я не прекращаю изучать новое, совершенсвтовать свои навыки, искать новые вызовы и  слеить за постоянно меняющимся и непредсказуемым (а иногда жестоким) миром веб разработки.</p>
+                <h3>Сертификаты</h3>
+                <div id="certifications">
+                    <div data-certification-id="0" class="certification"></div>
+                    <div data-certification-id="1" class="certification"></div>
+                </div>
             </div>
             <ul id="about-features">
                 <li class="about-feature"></li>
@@ -108,5 +114,10 @@
         <p>А сайту <a href="https://www.flaticon.com/">flaticon.com</a>, <a href="https://www.flaticon.com/authors/freepik">Freepik</a> и <a href="https://www.flaticon.com/authors/pixel-perfect">Pixel Perfect</a> большая благодарность за иконки.</p>
         <p>2022 © Alex</p>
     </footer>
+
+    <aside id="modal">
+        <div id="modal-close"></div>
+        <div id="modal-window"></div>
+    </aside>
 </body>
 </html>

@@ -28,6 +28,34 @@
     margin-right: -3rem;
 }
 
+#certifications {
+    display: flex;
+}
+
+.certification {
+    height: 5rem;
+    width: 7rem;
+    margin: 0 1rem;
+    border: solid 0.3rem var(--main-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.certification:hover {
+    transform: scale(1.2);
+}
+
+.certification:nth-of-type(1) {
+    background: url('/img/certifications/react-certification.jpg');
+    background-size: contain;
+}
+
+.certification:nth-of-type(2) {
+    background: url('/img/certifications/figma-certification.jpg');
+    background-size: contain;
+}
+
 #about-features {
     height: 100%;
 }
@@ -58,15 +86,6 @@
 .about-feature:nth-of-type(4) {
     background: url('/img/icons/react.png');
     background-size: contain;
-}
-
-.perk-text {
-    height: 2rem;
-    width: 10rem;
-    border-radius: 10px;
-    transform: translateX(72%);
-    background-color: var(--color-blue-light);
-    transition: 0.3s all;
 }
 
 @media (max-width: 1000px) {

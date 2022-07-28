@@ -3,10 +3,7 @@
 }
 
 html {
-    --color-green: rgb(30, 148, 70);
-    --color-blue: rgb(97, 149, 228);
-    --color-blue-light: rgb(140, 230, 230);
-    --color-purple: rgb(121, 70, 145);
+    --main-color:rgb(55, 71, 114);
 }
 
 body {
