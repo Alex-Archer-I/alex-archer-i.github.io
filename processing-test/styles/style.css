@@ -1,9 +1,9 @@
-@import url('processing-test/styles/initial.css');
-@import url('processing-test/styles/header.css');
-@import url('processing-test/styles/mobile-menu.css');
-@import url('processing-test/styles/delivery.css');
-@import url('processing-test/styles/price.css');
-@import url('processing-test/styles/order.css');
+@import url('initial.css');
+@import url('header.css');
+@import url('mobile-menu.css');
+@import url('delivery.css');
+@import url('price.css');
+@import url('order.css');
 @import url('processing-test/styles/range.css');
 @import url('processing-test/styles/works.css');
 @import url('processing-test/styles/features.css');
