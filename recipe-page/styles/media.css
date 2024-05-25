@@ -1,0 +1,38 @@
+@media screen and (max-width: 375px) {
+    .recipe {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .recipe_img {
+        border-radius: 0;
+    }
+
+    header .recipe_title,
+    header .recipe_text {
+        padding: 0 2rem;
+    }
+
+    .recipe_section-raspberry {
+        margin: 0 2rem;
+    }
+
+    .recipe_section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .recipe_title-main {
+        font-size: 1.8rem;
+    }
+
+    .recipe_title {
+        font-size: 1.2rem;
+    }
+
+    .recipe_text {
+        font-size: 0.8rem;
+    }
+}
