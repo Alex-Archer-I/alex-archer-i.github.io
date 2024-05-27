@@ -1,0 +1,23 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --ligt-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 15%;
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--ligt-pink);
+}

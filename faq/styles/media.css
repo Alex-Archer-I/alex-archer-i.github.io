@@ -1,0 +1,9 @@
+@media screen and (max-width: 375px) {
+    .faq_title {
+        font-size: 1rem;
+    }
+
+    .faq_title-main {
+        font-size: 1.5rem;
+    }
+}
