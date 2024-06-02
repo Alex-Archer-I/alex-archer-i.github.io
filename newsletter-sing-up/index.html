@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./styles/initial.css">
+  <link rel="stylesheet" href="./styles/singup.css">
+  <link rel="stylesheet" href="./styles/js-classes.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <script src="./scripts/app.js" defer></script>
+</head>
+<body>
+
+  <main>
+    <section class="singup">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" role="none" class="singup_img-mobile">
+      <div class="singup_content">
+        <h1 class="singup_title">Stay updated!</h1>
+        <p class="singup_text">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="singup_features">
+          <li class="singup_features_item">
+            <img src="./assets/images/icon-list.svg" alt="Check icon" role="img">
+            <p class="singup_text">Product discovery and building what matters</p>
+          </li>
+          <li class="singup_features_item">
+            <img src="./assets/images/icon-list.svg" alt="Check icon" role="img">
+            <p class="singup_text">Measuring to ensure updates are a success</p>
+          </li>
+          <li class="singup_features_item">
+            <img src="./assets/images/icon-list.svg" alt="Check icon" role="img">
+            <p class="singup_text">And much more!</p>
+          </li>
+        </ul>
+        <form class="singup_form">
+          <div class="singup_form_labels">
+            <label for="email-subscribe" class="singup_form_label">Email address</label>
+            <p class="singup_form_label singup_form_label-error not-active">Valid email required</p>
+          </div>
+          <input type="email" id="email-subscribe" name="email-subscribe" placeholder="email@company.com" class="singup_form_field" required>
+          <button class="singup_btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" role="none" class="singup_img">
+    </section>
+
+    <section class="singup_modal not-active">
+      <img src="./assets/images/icon-success.svg" alt="Chack Icon" role="img" class="singup_modal_img">
+      <h2 class="singup_title">Thanks for subscribing!</h2>
+      <p class="singup_text">A confirmation email has been sent to <span class="singup_text-bold"></span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button class="singup_btn">Dismiss message</button>
+    </section>
+  </main>
+</body>
+</html>

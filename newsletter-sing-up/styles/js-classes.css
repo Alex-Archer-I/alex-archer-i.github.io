@@ -1,0 +1,8 @@
+.not-active {
+    display: none;
+}
+
+.input-error {
+    border-color: var(--tomato);
+    background-color: rgba(255, 98, 87, 0.3);
+}
