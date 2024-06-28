@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" crossorigin href="./assets/index-B0zQ0e5N.css">
+</head>
+<body class="min-h-screen bg-cream flex items-center justify-center p-4">
+  <main class="flex flex-col rounded-md overflow-hidden max-w-2xl sm:flex-row">
+    <picture class="sm:w-2/4">
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 40rem)">
+      <img src="./images/image-product-mobile.jpg" alt="The photo of the perfume">
+    </picture>
+    <section class="p-6 bg-white rounded-md flex flex-col gap-4 sm:w-2/4 sm:p-8 sm:justify-between">
+      <p class="font-sans-serif uppercase font-medium tracking-[.4rem] text-dark-grayish-blue">Perfume</p>
+      <h1 class="font-serif text-3xl font-bold text-very-dark-blue">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text-sm font-sans-serif text-dark-grayish-blue font-medium">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <div class="flex items-center gap-5">
+        <p class="text-3xl font-serif text-dark-cyan font-bold">$149.99</p>
+        <p class="font-sans-serif line-through text-dark-grayish-blue font-medium">$169.99</p>
+      </div>
+      <button class="bg-dark-cyan rounded-md py-2.5 flex items-center justify-center gap-2 cursor-pointer hover:bg-very-dark-blue">
+        <img src="./images/icon-cart.svg" alt="Cart icon">
+        <p class="text-white font-medium">Add to Cart</p>
+      </button>
+    </section>
+  </main>
+</body>
+</html>
